@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "title": {
+    "en": "My DSH plugins",
+    "zh": "我的 DSH 插件"
+  },
+  "plugins": [
+    {
+      "name": "@bopii6/dsh-voice-broadcast",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793254419,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/bopii6/dsh-plugins",
+            "commit": "08c53fef5ffb4948416c3686a72d6ea86def5e8f",
+            "path": "packages/dsh-voice-broadcast"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.3 <0.3.0"
+          }
+        }
+      ],
+      "title": {
+        "en": "Voice Broadcast",
+        "zh": "语音播报"
+      },
+      "description": {
+        "en": "Speaks each running step in a short phrase and reads only the conclusion when the turn ends.",
+        "zh": "用一句话播报当前进行到哪一步，收尾时只念重点结论。"
+      },
+      "icon": "icons/bopii6__dsh-voice-broadcast.svg",
+      "metadata": {
+        "keywords": []
+      }
+    }
+  ]
+}
