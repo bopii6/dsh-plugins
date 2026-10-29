@@ -108,7 +108,7 @@ function main() {
 
   const dir = path.resolve(HERE, dirArg)
   const pkg = checkBundle(dir)
-  if (!pkg) {
+  if (!pkg || problems.length) {
     report()
     return
   }
@@ -117,10 +117,18 @@ function main() {
   if (!relative.split('/').every((segment) => PATH_SEGMENT.test(segment))) {
     fail(`package directory "${relative}" must use letters, digits and ._@+- only`)
   }
+  if (problems.length) {
+    report()
+    return
+  }
 
   const dirty = git(`status --porcelain -- "${relative}"`)
   if (dirty) {
     fail(`uncommitted changes in ${relative}: commit the bundle first, then pin its commit\n${dirty}`)
+  }
+  if (problems.length) {
+    report()
+    return
   }
   const commit = git('rev-parse HEAD')
 
@@ -199,3 +207,4 @@ function report() {
 }
 
 main()
+

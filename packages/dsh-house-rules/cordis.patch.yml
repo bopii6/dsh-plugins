@@ -1,0 +1,3 @@
+- insert:
+    - id: house-rules
+      name: '@local/dsh-house-rules'

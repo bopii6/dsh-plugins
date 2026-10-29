@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "House Rules",
+    "description": "Adds a fixed reply-style rule to every session's system prompt."
+  }
+}

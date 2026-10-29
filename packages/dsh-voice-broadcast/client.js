@@ -1,5 +1,5 @@
 ﻿window.__ModuleLoader__.load({
-  id: '@local/dsh-voice-broadcast',
+  id: '@bopii6/dsh-voice-broadcast',
   factory(require) {
     const React = require('react');
     const h = React.createElement;
