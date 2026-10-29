@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Voice Broadcast",
+    "description": "Speaks each running step in a short phrase and reads only the conclusion when the turn ends."
+  }
+}

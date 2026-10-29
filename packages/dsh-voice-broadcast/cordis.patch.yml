@@ -1,0 +1,3 @@
+- insert:
+    - id: voice-broadcast
+      name: '@local/dsh-voice-broadcast'
